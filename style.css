@@ -471,14 +471,19 @@ li {
 }
 
 footer {
-  padding: 60px 160px;
+  padding: 60px 100px;
   background: #fff;
   position: relative;
 }
 
+.footer-img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-text-wrap {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -492,6 +497,11 @@ footer {
 
 .footer-text {
   margin-top: 60px;
+}
+
+.footer-address {
+  display: flex;
+  gap: 10px;
 }
 
 .footer-link {

@@ -1,18 +1,13 @@
-name: Deploy static content to Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -30,7 +25,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'  # ← 必要に応じて修正（ビルド済みの静的コンテンツの場所）
+          path: '.'  # ← dist を使わない
 
       - name: Deploy to GitHub Pages
         id: deployment

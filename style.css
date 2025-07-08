@@ -33,6 +33,10 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
@@ -273,6 +277,10 @@ li {
 
 .title-wrap {
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 
 .section-title {
@@ -711,4 +719,29 @@ footer {
   font-weight: bold;
   text-decoration: none;
   color: #42210b
+}
+
+.reform-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.reform-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reform-img {
+  width: 300px;
+}
+
+.reform-content-text {
+  text-align: left;
+}
+
+.reform-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }

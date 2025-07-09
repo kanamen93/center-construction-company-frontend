@@ -306,7 +306,6 @@ li {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 40px;
 }
 
 .sp-position {
@@ -845,4 +844,8 @@ footer {
   @media screen and (max-width: 430px) {
     padding-top: 60px;
   }
+}
+
+.pb-40 {
+  padding-bottom: 40px;
 }

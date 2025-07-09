@@ -6,6 +6,14 @@
   }
 }
 
+.pc-only {
+  display: block;
+
+  @media screen and (max-width: 430px) {
+    display: none;
+  }
+}
+
 header {
   position: fixed;
   top: 0;
@@ -20,9 +28,13 @@ header {
     background: url(./images/nav-bg.png) center center repeat;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     height: 60px
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1 {
@@ -39,6 +51,12 @@ h3 {
 
 p {
   margin: 0;
+}
+
+ol {
+  @media screen and (max-width: 430px) {
+    padding: 0;
+  }
 }
 
 ul {
@@ -79,7 +97,11 @@ li {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 1% 0 0 30px;
+  padding: 10px 0 0 30px;
+
+  @media screen and (max-width: 960px) {
+    padding: 10px 0 0 20px;
+  }
 }
 
 .header-button {
@@ -273,6 +295,10 @@ li {
   @media screen and (max-width: 960px) {
     padding: 40px 30px 90px;
   }
+
+  @media screen and (max-width: 430px) {
+    padding: 40px 20px 90px;
+  }
 }
 
 .title-wrap {
@@ -281,6 +307,16 @@ li {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+}
+
+.sp-position {
+  @media screen and (max-width: 430px) {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    z-index: 100;
+    padding: 0 20px;
+  }
 }
 
 .section-title {
@@ -375,6 +411,10 @@ li {
 
 .mb-60 {
   margin-bottom: 60px;
+
+  @media screen and (max-width: 430px) {
+    margin-bottom: 0;
+  }
 }
 
 .company-text {
@@ -384,6 +424,10 @@ li {
   text-align: center;
   line-height: 2;
   color: #42210b;
+
+  @media screen and (max-width: 430px) {
+    font-size: 14px;
+  }
 }
 
 .list-item {
@@ -404,6 +448,10 @@ li {
   left: 48px;
   background: #fdf9f4;
   content: '';
+
+  @media screen and (max-width: 430px) {
+    left: 50px;
+  }
 }
 
 .list-item::after {
@@ -482,6 +530,10 @@ footer {
   padding: 60px 100px;
   background: #fff;
   position: relative;
+
+  @media screen and (max-width: 430px) {
+    padding: 20px 30px;
+  }
 }
 
 .footer-img-wrap {
@@ -493,6 +545,12 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 .footer-title {
@@ -505,6 +563,11 @@ footer {
 
 .footer-text {
   margin-top: 60px;
+
+  @media screen and (max-width: 430px) {
+    margin-top: 10px;
+    font-size: 12px;
+  }
 }
 
 .footer-address {
@@ -561,7 +624,7 @@ footer {
   border-radius: 10px 10px 0 0;
   background: #42210b;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     font-size: 16px;
   }
 }
@@ -573,7 +636,7 @@ footer {
   border-radius: 0 0 10px 10px;
   background: #fff;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     padding: 20px;
   }
 }
@@ -602,17 +665,17 @@ footer {
   padding: 0 15px;
   position: absolute;
   top: 20px;
-  right: -112px;
+  right: -80px;
   background: #42210b;
   font-size: 18px;
   color: #fff;
   border-radius: 0 10px 10px 0;
   text-align: end;
 
-  @media screen and (max-width: 400px) {
-    width: 40px;
+  @media screen and (max-width: 430px) {
+    width: 60px;
     padding: 0 10px;
-    right: -62px;
+    right: -60px;
     font-size: 12px;
   }
 }
@@ -622,15 +685,15 @@ footer {
   padding: 0 15px;
   position: absolute;
   top: 20px;
-  left: -110px;
+  left: -80px;
   background: #42210b;
   font-size: 18px;
   color: #fff;
   border-radius: 10px 0 0 10px;
   text-align: left;
 
-  @media screen and (max-width: 400px) {
-    width: 40px;
+  @media screen and (max-width: 430px) {
+    width: 60px;
     padding: 0 10px;
     left: -60px;
     font-size: 12px;
@@ -659,7 +722,7 @@ footer {
     height: 60px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     width: 30px;
     height: 30px;
   }
@@ -682,6 +745,12 @@ footer {
     width: 300px;
     height: 225px;
   }
+
+  @media screen and (max-width: 430px) {
+    min-width: 280px;
+    width: 280px;
+    height: 165px;
+  }
 }
 
 .sekou-list {
@@ -696,6 +765,10 @@ footer {
   left: 88px;
   background: #eabe32;
   content: '';
+
+  @media screen and (max-width: 430px) {
+    left: 49px;
+  }
 }
 
 .img-wrap {
@@ -712,6 +785,12 @@ footer {
   height: auto;
   border-radius: 10px;
   display: block;
+
+  @media screen and (max-width: 430px) {
+    max-width: 280px;
+    width: 280px;
+    height: auto;
+  }
 }
 
 .company-name {
@@ -730,6 +809,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 .reform-img {
@@ -744,4 +829,16 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pt-60 {
+  @media screen and (max-width: 430px) {
+    padding-top: 60px;
+  }
 }

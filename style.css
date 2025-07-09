@@ -327,6 +327,11 @@ li {
   width: max-content;
   margin: 0 auto;
   color: #42210b;
+
+  @media screen and (max-width: 430px) {
+    padding: 0 0 10px;
+    font-size: 20px;
+  }
 }
 
 .img-content {
@@ -436,10 +441,14 @@ li {
   flex-wrap: nowrap;
   position: relative;
   gap: 20px;
+
+  @media screen and (max-width: 430px) {
+    padding: 0 0 0 70px;
+  }
 }
 
 .list-item::before {
-  width: 3px;
+  width: 6px;
   height: 15px;
   top: -15px;
   position: absolute;
@@ -448,7 +457,7 @@ li {
   content: '';
 
   @media screen and (max-width: 430px) {
-    left: 50px;
+    left: 28px;
   }
 }
 
@@ -477,6 +486,12 @@ li {
   justify-content: center;
   border-radius: 50%;
   background: #eabe32;
+
+  @media screen and (max-width: 430px) {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
 }
 
 .list-text-wrap {
@@ -769,7 +784,7 @@ footer {
   content: '';
 
   @media screen and (max-width: 430px) {
-    left: 49px;
+    left: 29px;
   }
 }
 

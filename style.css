@@ -306,6 +306,7 @@ li {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+  padding-bottom: 40px;
 }
 
 .sp-position {

@@ -146,7 +146,7 @@ li {
   background: url(./images/nav-bg.png) center center repeat;
   opacity: 0;
   transition: opacity 0.3s ease;
-  padding: 180px 0 70px;
+  padding: 180px 20px 70px;
 }
 
 .header-menu.show {
@@ -311,10 +311,12 @@ li {
 .sp-position {
   @media screen and (max-width: 430px) {
     position: absolute;
-    top: 140px;
-    left: 0;
+    top: 50%;
+    left: 50%;
     z-index: 100;
     padding: 0 20px;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 }
 

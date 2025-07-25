@@ -6,6 +6,14 @@
   }
 }
 
+.text-sp-only {
+  display: none;
+
+  @media screen and (max-width: 430px) {
+    display: inline;
+  }
+}
+
 .pc-only {
   display: block;
 
